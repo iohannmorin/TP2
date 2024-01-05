@@ -1,0 +1,15 @@
+#galerie {
+    background-color: #b0b0b0;
+}
+
+.galerie-container {
+    display: flex;
+}
+
+.galerie-item {
+    margin: 10px 10px 10px 10px;
+}
+
+#galerie h2 {
+    font-size: 2.5rem;
+}

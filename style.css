@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#accueil,
+#inscription,
+#tableau,
+#article,
+#galerie,
+#video {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#accueil h1,
+#inscription h1,
+#tableau h1,
+#article h1,
+#galerie h1,
+#video h1 {
+    font-size: 5rem;
+}
+
+#accueil p,
+#inscription p,
+#tableau p,
+#article p,
+#galerie p,
+#video p {
+    font-size: 1.4rem;
+}

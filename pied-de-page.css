@@ -1,0 +1,27 @@
+.footer__conteneur {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 4rem;
+    flex-wrap: wrap;
+    color: white;
+    padding-right: 10rem;
+}
+
+.footer__adresse,
+.footer__sources {
+    display: flex;
+    flex-direction: column;
+    padding-right: 4rem;
+}
+
+#piedpage {
+    padding-top: 1rem;
+    font-size: 17px;
+    background-color: #242424 ;
+}
+
+#piedpage h4 {
+    font-size: 30px;
+    padding-bottom: 1rem;
+}
+

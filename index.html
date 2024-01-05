@@ -1,0 +1,275 @@
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mon Site Web</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/accueil.css">
+        <link rel="stylesheet" href="css/formulaire.css">
+        <link rel="stylesheet" href="css/tableau.css">
+        <link rel="stylesheet" href="css/articles.css">
+        <link rel="stylesheet" href="css/galerie.css">
+        <link rel="stylesheet" href="css/video.css">
+        <link rel="stylesheet" href="css/entete.css">
+        <link rel="stylesheet" href="css/pied-de-page.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+
+ <!--//////////////////////////////////////////////////////////SECTION ENTETE/////////////////////////////////////////////////////////////-->
+
+        <div id="entete">
+            <header class="entete">
+                <img class="entete__logo" src="images/logo.png" alt="logo">
+                <h1 class="entete__h1">Pear Phone</h1>
+                <form class="entete__form">
+                    <input type="search" id="recherche" placeholder="Rechercher">
+                    <label for="recherche">🔎</label>
+                </form>
+                <input type="checkbox" id="chk_burger">
+                <label id="burger" for="chk_burger">
+                    <img class="entete__menu" src="images/menuButton.png" alt="Menu">
+                </label>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#inscription">Inscription</a></li>
+                        <li><a href="#tableau">Horaire</a></li>
+                        <li><a href="#article">À propos</a></li>
+                        <li><a href="#galerie">Galerie</a></li>
+                        <li><a href="#video">Vidéo</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+<!--//////////////////////////////////////////////////////////SECTION ACCUEIL/////////////////////////////////////////////////////////////-->
+
+        <div id="accueil">
+            <section>
+                <h1>Accueil</h1>
+                <p>Pear Phone : La prochaine inovation dans le monde virtuel</p>
+                
+                <img src="images/pearPhone.jpg" alt="Pear">
+
+                <p>TP2</p>
+                <p>PEAR PHONE</p>
+                <p>Iohann Morin</p>
+                <p>582-1W1 – Mise en page Web</p>
+                <p>Techniques d’intégration multimédia</p>
+                <p>Collège de Maisonneuve</p>
+                <p>Github : iohannmorin</p>
+                <p>Automne 2023</p>
+            </section>
+        </div>
+
+<!--//////////////////////////////////////////////////////////SECTION INSCRIPTION/////////////////////////////////////////////////////////-->
+
+        <div id="inscription">
+            <section>
+                <h1>Inscription</h1>
+                <p class="inscription__p">Inscrivez-vous pour reçevoir plus de mises à jour sur le produit</p>
+                <form class="inscription__form" action="traitement.php" method="post">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="motdepasse">Mot de passe :</label>
+                    <input type="password" id="motdepasse" name="motdepasse" required>
+
+                    <label for="confmotdepasse">Confirmer le mot de passe :</label>
+                    <input type="password" id="confmotdepasse" name="confmotdepasse" required>
+
+                    <input type="submit" value="S'inscrire">
+                </form>
+            </section>
+        </div>
+
+<!--//////////////////////////////////////////////////////////SECTION TABLEAU/////////////////////////////////////////////////////////////-->
+
+        <div id="tableau">
+            <table class="tableau">
+                <caption>Heures d'ouverture dans les magazins Pear</caption>
+                <tr>
+                    <th class="jour"></th>
+                    <th class="jour">Lundi</th>
+                    <th class="jour">Mardi</th>
+                    <th class="jour">Mercredi</th>
+                    <th class="jour">Jeudi</th>
+                    <th class="jour">Vendredi</th>
+                    <th class="jour">Samedi</th>
+                    <th class="jour">Dimanche</th>
+                </tr>
+                <tr>
+                    <th class="heure">8h</th>
+                    <td></td> <!--Lundi-->
+                    <td></td> <!--Mardi-->
+                    <td></td> <!--Mercredi-->
+                    <td></td> <!--Jeudi-->
+                    <td></td> <!--Vendredi-->
+                    <td rowspan="12" class="cours"></td> <!--Samedi-->
+                    <td rowspan="12" class="cours"></td> <!--Dimanche-->
+                </tr>
+                <tr>
+                    <th class="heure">9h</th>
+                    <td></td> <!--Lundi-->
+                    <td></td> <!--Mardi-->
+                    <td></td> <!--Mercredi-->
+                    <td></td> <!--Jeudi-->
+                    <td></td> <!--Vendredi-->
+                    <td></td> <!--Samedi-->
+                    <td></td> <!--Dimanche-->
+                </tr>
+                <tr>
+                    <th class="heure">10h</th>
+                    <td rowspan="8" class="cours"></td> <!--Lundi-->
+                    <td rowspan="8" class="cours"></td> <!--Mardi-->
+                    <td rowspan="8" class="cours"></td> <!--Mercredi-->
+                    <td rowspan="8" class="cours"></td> <!--Jeudi-->
+                    <td rowspan="8" class="cours"></td> <!--Vendredi-->
+                </tr>
+                <tr>
+                    <th class="heure">11h</th>
+                </tr>
+                <tr>
+                    <th class="heure">12h</th>
+                </tr>
+                <tr>
+                    <th class="heure">13h</th>
+                </tr>
+                <tr>
+                    <th class="heure">14h</th>
+                </tr>
+                <tr>
+                    <th class="heure">15h</th>
+                </tr>
+                <tr>
+                    <th class="heure">16h</th>
+                </tr>
+                <tr>
+                    <th class="heure">17h</th>
+                </tr>
+                <tr>
+                    <th class="heure">18h</th>
+                    <td></td> <!--Lundi-->
+                    <td></td> <!--Mardi-->
+                    <td></td> <!--Mercredi-->
+                    <td></td> <!--Jeudi-->
+                    <td></td> <!--Vendredi-->
+                </tr>
+                <tr>
+                    <th class="heure">19h</th>
+                    <td></td> <!--Lundi-->
+                    <td></td> <!--Mardi-->
+                    <td></td> <!--Mercredi-->
+                    <td></td> <!--Jeudi-->
+                    <td></td> <!--Vendredi-->
+                </tr>
+                <tr>
+                    <th class="heure">20h</th>
+                    <td></td> <!--Lundi-->
+                    <td></td> <!--Mardi-->
+                    <td></td> <!--Mercredi-->
+                    <td></td> <!--Jeudi-->
+                    <td></td> <!--Vendredi-->
+                    <td></td> <!--Samedi-->
+                    <td></td> <!--Dimanche-->
+                </tr>
+            </table>
+            <figcaption class="tableau__affirmation">Ouvert la semaine de 10 heure à 18 heure et la fin de semaine de 8 heure à 20 heure</figcaption>
+        </div>
+
+<!--//////////////////////////////////////////////////////////SECTION ARTICLE/////////////////////////////////////////////////////////////-->
+
+        <div id="article">
+            <section>
+                <h1>À propos</h1>
+
+                <p>Le Pear Phone est le tout nouvel téléphone intélligent sur le marché. Notre équipe travaille sur cette inovation depuid 2014, et 10 ans plus tard, nous sommes près à vous le présenter.</p>
+
+                <p>Il utilise une technologie encore jamais utilisée ailleurs : la caméra du Pear Phone vous permet de prendre des photos en Haute Définition (HD). Cela ne fut jamais possible auparavant, comme la nouvelle technologie qui le rend complètement réstitant à l'eau! En plus, le Pear Phone possède un disque dûr pouvant contenir 16 GB de stockage, battant tout autre téléphone intélligent. Finalement, sa forme en poire permet à l'utilisateur d'être comfortable lors de son utilisation! Commandez le Pear Phone dès le 21 Mars 2024.</p>
+            </section>
+        </div>
+
+<!--//////////////////////////////////////////////////////////SECTION GALERIE/////////////////////////////////////////////////////////////-->
+
+        <div id="galerie">
+            <section>
+                <h1>Galerie</h1>
+                <h2>Prototypes du Pear Phone</h2>
+                <div class="galerie-container">
+                    <div class="galerie-item">
+                        <img src="images/prototypeBleuFonce.png" alt="Prototype Bleu Fonce" width="335">
+                    </div>
+                    <div class="galerie-item">
+                        <img src="images/prototypeBleuPale.png" alt="Prototype Bleu Pale" width="335">
+                    </div>
+                    <div class="galerie-item">
+                        <img src="images/prototypeNoir.png" alt="Prototype Noir" width="335">
+                    </div>
+                </div>
+                <div class="galerie-container">
+                    <div class="galerie-item">
+                        <img src="images/prototypeRose.png" alt="Prototype Rose" width="335">
+                    </div>
+                    <div class="galerie-item">
+                        <img src="images/prototypeRouge.png" alt="Prototype Rouge" width="335">
+                    </div>
+                    <div class="galerie-item">
+                        <img src="images/prototypeViolet.png" alt="Prototype Violet" width="335">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+<!--//////////////////////////////////////////////////////////SECTION VIDEO///////////////////////////////////////////////////////////////-->
+
+<div id="video">
+    <section>
+        <h1>Vidéo</h1>
+        <div class="video-container">
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/aHmEJy1RuiQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <h2>Bande-annonce promotionnelle</h2>
+    </section>
+</div>
+
+<!--//////////////////////////////////////////////////////////SECTION FOOTER//////////////////////////////////////////////////////////////-->
+
+        <div id="piedpage">
+            <footer>
+                <div class="footer__conteneur">
+                    <section class="footer__adresse">
+                        <h4>Adresse</h4>
+                            <p>College de Maisonneuve</p>
+                            <p>3800 rue Sherbrooke</p>
+                            <p>Montreal, QC, CA</p>
+                            <p>H1X 2A2</p>
+                            <p>(514) 254-7131</p>
+                    </section>
+                    <section class="footer__social">
+                        <h4>Social</h4>
+                        <img src="images/facebook.png" width="50">
+                        <img src="images/instagram.png" width="50">
+                        <img src="images/youtube.png" width="50">
+                    </section>
+                    <section class="footer__sources">
+                        <h4>Sources</h4>
+                        <a href="https://www.flaticon.com">Icônes de menu et réseaux sociaux</a>
+                        <a href="https://tvpearphone.com/collections/frontpage">Prototypes du Pear Phone</a>
+                        <a href="https://www.cgtrader.com/3d-models/electronics/phone/pear-phone-from-victorious-show">Image de page d'accueil</a>
+                        <a href="https://www.youtube.com/watch?v=aHmEJy1RuiQ&ab_channel=Omen">Bande-annonce promotionnelle</a>
+                    </section>
+                </div>
+            </footer>
+        </div>
+
+    </body>
+</html> 

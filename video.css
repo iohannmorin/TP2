@@ -1,0 +1,8 @@
+#video {
+    flex-direction: column;
+    background-color: #a0a0a0;
+}
+
+#video iframe {
+    margin-top: 20px;
+}

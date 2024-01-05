@@ -1,0 +1,36 @@
+#chk_burger {
+    display: none;
+}
+
+#burger {
+    display: block;
+    padding: 10px;
+
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50;
+    left: 1300;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-top: 333px;
+}
+
+#chk_burger:checked ~ .menu {
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #eee;
+}
